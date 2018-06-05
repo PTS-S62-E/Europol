@@ -5,7 +5,7 @@ from europolapi.models import Vehicle
 
 
 class VehicleAdmin(admin.ModelAdmin):
-    allfields = ('HashedLicensePlate', 'serialNumber', 'originCountry')
+    allfields = ('licensePlate', 'serialNumber', 'originCountry')
     list_display = allfields
     list_display_links = allfields
     search_fields = allfields
