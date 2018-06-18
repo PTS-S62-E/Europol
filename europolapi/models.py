@@ -5,7 +5,7 @@ from django.db import models
 
 class Vehicle(models.Model):
     licensePlate = models.TextField(max_length=64, default="", blank=True)
-    serialNumber = models.TextField(default=uuid.uuid4(), primary_key=True)
+    serialNumber = models.TextField(default=uuid.uuid4(), max_length=64, primary_key=True)
     originCountry = models.TextField(max_length=2, default="")
 
     def HashedLicensePlate(self):
