@@ -73,6 +73,8 @@ TEMPLATES = [
     },
 ]
 
+APPEND_SLASH = True
+
 WSGI_APPLICATION = 'Europol.wsgi.application'
 
 # Database
